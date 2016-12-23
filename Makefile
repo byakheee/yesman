@@ -39,7 +39,7 @@ fmt: setup
 	goimports -w $$(glide nv -x)
 
 ## build binaries
-bin/yesman: cmd/yesman/yesman.go deps
+bin/yesman: cmd/yesman/main.go deps
 	go build -ldflags "$(LDFLAGS)" -o $@ $<
 
 ## Show help

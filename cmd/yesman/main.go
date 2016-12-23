@@ -1,8 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/byakheee/yesman"
 )
 
 var (
@@ -11,6 +12,5 @@ var (
 )
 
 func main() {
-	fmt.Printf("run yesman")
-	os.Exit(0)
+	os.Exit(yesman.Run())
 }
