@@ -38,8 +38,8 @@ lint: setup
 fmt: setup
 	goimports -w $$(glide nv -x)
 
-## build binaries ex. make bin/yesman
-bin/%: cmd/%/main.go deps
+## build binaries
+bin/yesman: cmd/yesman/yesman.go deps
 	go build -ldflags "$(LDFLAGS)" -o $@ $<
 
 ## Show help
