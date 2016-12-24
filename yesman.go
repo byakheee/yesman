@@ -37,7 +37,7 @@ func Run(ver string, rev string) int {
 
 	// version options
 	if *version == true {
-		fmt.Printf("version: %s, revision: %s", ver, rev)
+		fmt.Printf("version: %s, revision: %s\n", ver, rev)
 		return 0
 	}
 
