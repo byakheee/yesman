@@ -12,5 +12,5 @@ var (
 )
 
 func main() {
-	os.Exit(yesman.Run())
+	os.Exit(yesman.Run(version, revision))
 }
