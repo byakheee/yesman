@@ -16,10 +16,25 @@ go : version 1.6 以上
 ```
 $ go get github.com/byakheee/yesman
 $ cd $GOPATH/src/github.com/byakheee/yesman
+$ make setup
 $ make build
 $ export PATH=$PATH:$GOPATH/src/github.com/byakheee/yesman/bin
 $ yesman -version
-# version: v0.1.0, revision: <rev>
+version: v0.1.0, revision: <rev>
+```
+
+### make help
+```
+$ make help
+build:             build binaries
+build-debug:       build debug binaries
+deps:              Install dependencies
+fmt:               Formmat source codes
+help:              Show help
+lint:              Lint
+setup:             Setup
+test:              Run tests
+update:            Update dependencies
 ```
 
 ## Licence
